@@ -29,7 +29,8 @@ var errorMarkers =[];
 
 function loadTypeScriptLibrary(){
     var libnames = [
-        "typescripts/lib.d.ts"
+        "typescripts/ecmascript.d.ts",
+        "typescripts/topia.d.ts"
     ];
 
     libnames.forEach(function(libname){
@@ -296,7 +297,7 @@ $(function(){
     document.getElementById('output').style.fontSize='14px';
 
     loadTypeScriptLibrary();
-    loadFile("samples/greeter.ts");
+    loadFile("samples/tutorialCode.ts");
 
     editor.addEventListener("change", onUpdateDocument);
     editor.addEventListener("changeSelection", onChangeCursor);
@@ -374,7 +375,7 @@ $(function(){
 
     workerOnCreate(function(){//TODO use worker init event
 
-        ["typescripts/lib.d.ts"].forEach(function(libname){
+        ["typescripts/ecmascript.d.ts", "typescripts/topia.d.ts"].forEach(function(libname){
             appFileService.readFile(libname, function(content){
                 var params = {
                     data: {

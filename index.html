@@ -9,21 +9,6 @@
   <body>
 
     <div class="fluid-container" style="padding:5px">
-      <div>
-        <h1> TypeScript Playground on Ace Editor</h1>
-        <div style="padding:10px">
-          <p>
-            <a href="http://www.typescriptlang.org/Playground/">typescript playground </a> build on
-            <a href="http://ace.ajax.org">ace editor</a>.
-          </p>
-          <p>
-            <ul>
-              <li>shortcut key [Ctrl-Space] : AutoComplete</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-
       <div class="editor-area">
         <div class="warp-container">
           <div class="langauge-title" style="float:left">
@@ -32,10 +17,12 @@
             </div>
             <div style="float:left;padding-top:5px;padding-left:20px">
               <select id="select-sample">
-                <option selected="selected" value="greeter.ts">Walkthrough:Classes</option>
-                <option value="raytracer.ts">Raytracer</option>
-                <option value="animal.ts">Simple inheritance</option>
-
+                <option selected="selected" value="tutorialCode.ts">
+                  Tutorial Code
+                </option>
+                <option value="randomWalk.ts">Random Walk</option>
+                <option value="illusionWolf.ts">Illusion:Wolf Spell</option>
+                <option value="teleportSpell.ts">Teleport Spell</option>
               </select>
             </div>
             <div style="clear:both"></div>
@@ -48,9 +35,6 @@
 
         <div class="warp-container">
           <div class="langauge-title" style="float:right">
-            <div style="float:left">
-              <div id="javascript-run">Run</div>
-            </div>
             <div style="float:left;margin-left:10px">
               <h2>javascript</h2>
             </div>
@@ -64,14 +48,14 @@
       </div>
 
       <div class="footer" style="padding:5px;">
-        <p>source code on <a href="https://github.com/hi104/typescript-playground-on-ace">github</a></p>
+        <p>source code on <a href="https://github.com/rictic/typescript-playground-on-ace">github</a></p>
       </div>
     </div>
 
   </body>
 
   <script type="text/javascript">
-    var exports ={};
+    var exports = {};
   </script>
 
   <script type="text/javascript" src="./javascripts/lib/jquery-1.8.2.min.js"></script>
