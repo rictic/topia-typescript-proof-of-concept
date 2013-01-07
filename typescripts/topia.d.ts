@@ -15,8 +15,8 @@ declare function UseAction(action:string, craftCommand:CraftCommand):void;
 // Drop
 declare function UseAction(action:string,
                            dropCommand: {
-                              slot:number,
-                              destination:Location
+                              slot:number;
+                              destination:Location;
                            }):void;
 // Get
 declare function UseAction(action:string, what:Entity);
@@ -97,7 +97,7 @@ interface Parameters extends Location {
 }
 
 interface Power {
-  Invoke(target:Entity, name:string, causeEffect:(effect:Effect)=>void):void
+  Invoke(target:Entity, name:string, causeEffect:(effect:Effect)=>void):void;
 }
 
 interface Effect {
