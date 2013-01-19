@@ -8,13 +8,24 @@
   </head>
   <body>
 
+    <div class='explanation'>
+      <h3>Error Catching Topia Editor Proof of Concept</h3>
+
+      <div>
+        Try typing one of these
+        <ul>
+          <li><code>Me.</code> - autocomplete on fields, good for discovering what's available</li>
+          <li><code>FindCloses({ isobject: true });</code> - notice that it sees the typo ('Closes' rather than 'Closest').</li>
+          <li><code>FindClosest();</code> - notice that it can tell that FindClosest should take one argument</li>
+          <li>And more!</li>
+      </div>
+
+    </div>
+
     <div class="fluid-container" style="padding:5px">
       <div class="editor-area">
         <div class="warp-container">
           <div class="langauge-title" style="float:left">
-            <div style="float:left">
-              <h2>typescript</h2>
-            </div>
             <div style="float:left;padding-top:5px;padding-left:20px">
               <select id="select-sample">
                 <option selected="selected" value="tutorialCode.ts">
@@ -33,7 +44,7 @@
           </div>
         </div>
 
-        <div class="warp-container">
+        <div class="hidden">
           <div class="langauge-title" style="float:right">
             <div style="float:left;margin-left:10px">
               <h2>javascript</h2>

@@ -4,7 +4,7 @@ body{
 
 .warp-container{
     float:left;
-    width:49%;
+    width:100%;
 }
 
 .editor-container {
@@ -131,4 +131,12 @@ body{
 
 .ace_autocomplete_selected .label-type{
     visibility:visible;
+}
+
+.hidden {
+  display:none;
+}
+
+.explanation {
+  margin: 5px;
 }
