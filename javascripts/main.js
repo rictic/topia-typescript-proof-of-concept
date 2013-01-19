@@ -297,7 +297,7 @@ $(function(){
     document.getElementById('output').style.fontSize='14px';
 
     loadTypeScriptLibrary();
-    loadFile("samples/tutorialCode.ts");
+    loadFile("samples/illusionWolf.ts");
 
     editor.addEventListener("change", onUpdateDocument);
     editor.addEventListener("changeSelection", onChangeCursor);

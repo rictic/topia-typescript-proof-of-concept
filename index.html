@@ -12,7 +12,7 @@
       <h3>Error Catching Topia Editor Proof of Concept</h3>
 
       <div>
-        Try typing one of these
+        Try typing one of these:
         <ul>
           <li><code>Me.</code> - autocomplete on fields, good for discovering what's available</li>
           <li><code>FindCloses({ isobject: true });</code> - notice that it sees the typo ('Closes' rather than 'Closest').</li>
@@ -20,19 +20,22 @@
           <li>And more!</li>
       </div>
 
+      <div>
+        Based on the Ace Editor with some Typescript extensions by hi104. <a href='https://github.com/rictic/topia-typescript-proof-of-concept'>Source on Github</a>.
+      </div>
     </div>
 
-    <div class="fluid-container" style="padding:5px">
+    <div class="fluid-container">
       <div class="editor-area">
         <div class="warp-container">
           <div class="langauge-title" style="float:left">
             <div style="float:left;padding-top:5px;padding-left:20px">
               <select id="select-sample">
-                <option selected="selected" value="tutorialCode.ts">
-                  Tutorial Code
+                <option selected="selected" value="illusionWolf.ts">
+                  Illusion:Wolf Spell
                 </option>
+                <option value="tutorialCode.ts">Tutorial Code</option>
                 <option value="randomWalk.ts">Random Walk</option>
-                <option value="illusionWolf.ts">Illusion:Wolf Spell</option>
                 <option value="teleportSpell.ts">Teleport Spell</option>
               </select>
             </div>
@@ -58,9 +61,6 @@
         </div>
       </div>
 
-      <div class="footer" style="padding:5px;">
-        <p>source code on <a href="https://github.com/rictic/topia-typescript-proof-of-concept">github</a></p>
-      </div>
     </div>
 
   </body>

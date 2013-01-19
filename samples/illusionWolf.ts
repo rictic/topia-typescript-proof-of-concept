@@ -1,5 +1,6 @@
-UsePower(function(power) {
+// Wolf Illusion Spell
 
+UsePower(function(power) {
     var target = Me; // 'Me' is the only valid target for illusion
 
     power.Invoke(target, "illusion", function(effect) { // Requires illusion skill
